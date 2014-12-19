@@ -1,0 +1,1 @@
+Steps needed to set up grunt + plugins, testing framework and git on a new node project.
