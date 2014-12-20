@@ -1,3 +1,4 @@
+//command -->  grunt watch
 
 module.exports = function(grunt){
 

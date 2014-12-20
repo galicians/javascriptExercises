@@ -1,6 +1,11 @@
-//
+    // user.js
 
-var greetings = require('./module01.js')
+function User() {
 
+};
 
-// greetings.hello()
+module.exports = User;
+
+    // user_spec.js
+
+var User = require(../models/user.js)
