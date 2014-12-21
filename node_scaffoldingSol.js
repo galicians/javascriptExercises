@@ -13,5 +13,6 @@ add readme.md
 git push
 Testing framework:
 npm install —-save-dev mocha
-touch mocha.opts
-npm install —-save-dev
+touch mocha.opts  (--reporter spec)
+npm install —-save-dev should
+mocha -w
