@@ -8,12 +8,11 @@ describe('the buzzer object', function() {
 
     beforeEach(function(){
         buzzer = new Buzzer();
-        called = null;
+        called = false;
     });
 
     it("emits a 'buzz' when pressed", function(){
         buzzer.on('buzz', function() { called = true } );
-        called = false
         buzzer.press()
         called.should.equal(true)
     });
