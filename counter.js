@@ -9,6 +9,7 @@ var Counter = function() {
 util.inherits(Counter, events.EventEmitter);
 
 Counter.prototype.increase = function() {
+    console.log('emitting')
     this.emit('increase')
 };
 
@@ -17,10 +18,10 @@ var Accumulator = function() {
     events.EventEmitter.call(this);
 };
 
+util.inherits(Accumulator, events.EventEmitter)
+
 Accumulator.prototype.counting = function(){
-    this.on('increase', function(){
-        this.count += 1
-    });
+    this.count += 1
 };
 
 exports.Counter = Counter;
