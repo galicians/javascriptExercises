@@ -6,7 +6,7 @@ describe('announcer', function(){
     var message;
     
     beforeEach(function(){   
-        announcer = new Announcer('starting');
+        announcer = new Announcer('Attention developerts');
         message = null;
     });
 
@@ -16,6 +16,6 @@ describe('announcer', function(){
         });
         
         announcer.announce('unit testing for announcer')
-        message.should.equal('starting, unit testing for announcer');
+        message.should.equal('Attention developerts, unit testing for announcer');
     });
 });
